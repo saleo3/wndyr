@@ -18,7 +18,13 @@ const Login = () => {
   const inputHandler = addState(state, setState);
 
   const onSubmit = () => {
-    console.log('submit', state);
+    if (isAuth(state)) {
+      setError(false);
+      sessionStorage.setItem('user', state.email);
+      history.push('/home');
+    } else {
+      setError(true);
+    }
   };
 
   return (
