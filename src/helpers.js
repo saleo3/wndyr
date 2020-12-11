@@ -17,12 +17,6 @@ export const initialState = {
   [VARS.password]: '',
 };
 
-// export const isFilled = (state) =>
-//   !Object.values(state).every((prop) => prop !== '') || !isEmail(state.email);
-
-// export const handler = (state, setState) => (field, event) =>
-//   setState({ ...state, [field]: event.target.value });
-
 export function isFilled(state) {
   return (
     !Object.values(state).every((prop) => prop !== '') || !isEmail(state.email)
