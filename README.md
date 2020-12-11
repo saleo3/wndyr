@@ -24,11 +24,17 @@ You will also see any lint errors in the console.
 
 ### `App Functionality`
 
+```
 /
-|-login/
-|-home/
+┣ login/
+┣ home/
+```
 
 Where home/ is protected and redirects to login/ if user is not logged in
-Credentials:
+
+### `Credentials`
+
+```
 Email = emir@wndyr.com
 Password: wndyr
+```
