@@ -41,6 +41,7 @@ const Login = () => {
           value={state.password}
           handler={inputHandler}
           toggler={(event) => setToggle(!toggle)}
+          showPassword={toggle}
         />
 
         {isError && 'Invalid Credentials'}

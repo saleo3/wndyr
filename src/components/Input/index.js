@@ -1,8 +1,16 @@
 import React from 'react';
 import styles from './styles.module.css';
-import icon from './Vector.svg';
+import showPasswordIcon from './show.svg';
+import hidePasswordIcon from './hide.svg';
 
-const Input = ({ name, type = 'text', value, handler, toggler }) => {
+const Input = ({
+  name,
+  type = 'text',
+  value,
+  handler,
+  toggler,
+  showPassword,
+}) => {
   return (
     <div className={styles.container}>
       <input
@@ -14,7 +22,10 @@ const Input = ({ name, type = 'text', value, handler, toggler }) => {
       <label htmlFor="">{name}</label>
       {toggler && (
         <button onClick={toggler}>
-          <img src={icon} alt="" />
+          <img
+            src={showPassword ? showPasswordIcon : hidePasswordIcon}
+            alt=""
+          />
         </button>
       )}
     </div>
