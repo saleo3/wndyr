@@ -7,7 +7,7 @@ git clone https://github.com/saleo3/wndyr.git
 ### `Install Dependencies`
 
 ```
-npm i
+yarn
 ```
 
 ### `Run project`
