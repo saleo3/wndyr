@@ -18,6 +18,7 @@ input[type='password'] {
   outline: none;
   color: #1c1c34;
   padding: 21px 35px 21px 29px;
+  font-family: 'Poppins', sans-serif;
 }
 
 label {
@@ -28,7 +29,7 @@ label {
   transform: translate3d(0, 0, 0);
   transition: all 0.2s ease-in-out;
   pointer-events: none;
-  font-family: Open Sans;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -49,6 +50,7 @@ input:focus + label {
   background: white;
   padding: 0 3px;
   left: 29px;
+  font-family: 'Poppins', sans-serif;
 }
 
 input[data-empty='false'],
